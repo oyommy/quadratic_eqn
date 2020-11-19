@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="quadratic.css">
+    <title>Quadratic Formula</title>
+</head>
+<body>
+    <button type="button" class="collapsible">What you should know about Quadratic Equations</button>
+    <div class="content">
+        <p>
+                A Quadratic Equation is an equation in the form <em>ax<sup>2</sup>+bx+c</em> where
+            <em>a</em>  and <em>b</em> are co-efficients of <em>x<sup>2</sup> and x</em> respectively.
+        </p>
+        <p>In order to obtain the roots (i.e the solution) of the equation, we use the formula <em>x = (−b ± √(b<sup>2</sup> − 4ac)) / 2a.</em> Other methods such as <em>Factorization</em> and <em>Completing the Square</em> can also be used.</p>
+        <p>Enter the coefficients <em>a</em> and <em>b</em> and constant <em>c</em> to get the roots of your equation: Note that all calculations are done to 1 decimal place.</p>
+        <p>If the roots of the equation you provided cannot be determined, the app will return NaN(Not A Number). This happens if the expression <em>(√b<sup>2</sup>-4ac)</em> returns a negative number. Recall that we cannot determine the square root of a negative number</p>
+    </div>
+    <div class="container">
+        <h1>Find the roots of a quadratic equation</h1>
+        <p>Assume that this is your quadratic equation: <em>3x<sup>2</sup> + 9x + c</em>;</p>
+        <p>a = 3, b= 9 and c = 6</p>
+        <div class="input__a">
+            <em>a : </em>
+            <input class="input__num numa" type="number">
+        </div>
+        <div class="input__b">
+            <em>b : </em>
+            <input class="input__num numb" type="number">
+        </div>
+        <div class="input__c">
+            <em>c : </em>
+            <input class="input__num numc" type="number">
+        </div>
+        
+        
+        <button class="btn" onclick="calculate()">Calculate</button>
+        <p class="result"></p>
+    </div>
+    
+
+    <script src="quadratic.js"></script>
+</body>
+</html>
